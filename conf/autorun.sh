@@ -5,13 +5,13 @@
 
 cd /var/www/webapp/src
 
-sudo setfacl -R -d -m u:admin:rwx ./web/assets ./runtime
-sudo setfacl -R -d -m g:www-data:rwx ./web/assets ./runtime
-sudo setfacl -R -d -m o::r-x ./web/assets ./runtime
+sudo setfacl -R -d -m u:admin:rwx ./storage
+sudo setfacl -R -d -m g:www-data:rwx ./storage
+sudo setfacl -R -d -m o::r-x ./storage
 
-sudo setfacl -R -m u:admin:rwx ./web/assets ./runtime
-sudo setfacl -R -m g:www-data:rwx ./web/assets ./runtime
-sudo setfacl -R -m o::r-x ./web/assets ./runtime
+sudo setfacl -R -m u:admin:rwx ./storage
+sudo setfacl -R -m g:www-data:rwx ./storage
+sudo setfacl -R -m o::r-x ./storage
 
 # Install some dependencies
 composer install
