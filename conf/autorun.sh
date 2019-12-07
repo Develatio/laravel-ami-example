@@ -15,6 +15,7 @@ sudo setfacl -R -m o::r-x ./web/assets ./runtime
 
 # Install some dependencies
 composer install
+npm install
 
 # Maybe run migrations?
-# ./yii migrate
+# php artisan migrate --force
